@@ -15,7 +15,7 @@ const openai = new OpenAIApi(configuration);
 
 async function getAnswer(messages) {
   const response = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: keys.model,
     messages: messages
 });
 
